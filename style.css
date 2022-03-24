@@ -1,0 +1,132 @@
+/* navs */
+header{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    background-color: rgba(219, 219, 219, 1);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #b3b1b1 ;
+}
+footer{
+    position: fixed;
+    text-align: center;
+    display: flex;
+    bottom:0px;
+}
+.topo-mobile{
+    padding-top: 16px;
+    margin:  auto;
+    width: 614px;
+    height: 60px;
+    display: none;
+    justify-content: space-between;
+}
+.topo-desk{
+    display: flex;
+    justify-content: space-between;
+    margin:  auto;
+    width: 935px;
+    height: 50px;
+}
+.hrtopo{
+    margin-right: 15px;
+    transform: rotate(90deg);
+    height: auto;
+    padding-top: 14px;
+}
+input[type=text]{
+    height: 25px;
+    width: auto;
+    background-color: rgb(238, 238, 238);
+    margin-top: 14px;
+    text-align: center;
+    box-shadow: 0 0  2px 1px;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+}
+.nav-insta{
+    margin-bottom:10px ;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.nav-user{
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    margin-right: 20px;
+}
+.footer-mobile{
+    background-color: border 1px solid rgba(219, 219, 219, 1);
+    width: 614px;
+    height: 50px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5px;
+}
+
+/* main  */
+body{
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 935px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divao1{
+    width: 500px;
+    top: 0px;
+    left: 0px;
+    margin-right: 440px;
+}
+.divao2{
+    position: fixed;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    background-color: blue;
+    width: 300px;
+    height: 500px;
+    margin-top: 15px;
+    margin-left: 600px;
+    margin-bottom: 350px;
+
+}
+.story{
+    background-color: black;
+    width: 610px;
+    height: 100px;
+    margin-top: 88px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.posts{
+    background-color: rgb(255, 0, 149);
+    width: 610px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post{
+    width: 614px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+/* responsivo */
+@midia only screen and (max-width: 768px){
+
+}
+@midia only screen and (max-width: 614px){
+    
+}
