@@ -1,0 +1,55 @@
+
+@media only screen and (max-width: 935px) {
+    body{
+        width: 935px;
+        }
+    .sidebar{
+        display:none;
+        visibility: none;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .timeline{
+        margin-left: 250px;
+        width: 499px;
+    }
+}
+@media only screen and (max-width: 614px) {
+    body{
+    width: 614px;
+    }
+    main{
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        width: 614px;
+        margin-left: 50px;
+    }
+    .topo-mobile{
+        display: flex;
+    }
+    .topo-desk{
+        display: none;
+    }
+    footer{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+    .footer-mobile{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+}
