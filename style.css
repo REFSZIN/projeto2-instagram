@@ -3,8 +3,8 @@ header{
     position: fixed;
     top:0px;
     left: 0px;
-    background-color: rgba(219, 219, 219, 1);
-    width: 100vw;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
     height: 70px;
     display: flex;
     align-items: center;
@@ -15,6 +15,7 @@ footer{
     text-align: center;
     display: flex;
     bottom:0px;
+    background: rgba(255, 255, 255, 1);
 }
 .topo-mobile{
     padding-top: 16px;
@@ -27,7 +28,7 @@ footer{
 .topo-desk{
     display: flex;
     justify-content: space-between;
-    margin:  auto;
+    margin: 0  auto;
     width: 935px;
     height: 50px;
 }
@@ -58,7 +59,6 @@ a{
     justify-content: center;
     align-items: center;
     padding-top: 12px;
-    margin-right: 20px;
 }
 .footer-mobile{
     background-color: border 1px solid rgba(219, 219, 219, 1);
@@ -69,7 +69,6 @@ a{
     align-items: center;
     margin: 10px 5px;
 }
-
 /* main  */
 body{
     justify-content: center;
@@ -89,32 +88,36 @@ main{
     margin-right: 440px;
 }
 .divao2{
+    border: 1px solid rgba(219, 219, 219, 1);
+    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
     position: fixed;
     display: flex;
-    align-items:flex-end;
-    justify-content: center;
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 1);
     width: 300px;
     height: 500px;
     margin-top: 15px;
-    margin-left: 600px;
+    margin-left: 620px;
     margin-bottom: 350px;
-
 }
 .story{
-    background-color: black;
+    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
+    border: 1px solid rgba(219, 219, 219, 1);
+    background-color: rgba(255, 255, 255, 1);
     width: 610px;
     height: 100px;
     margin-top: 88px;
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin-left: 12px;
 }
 .posts{
-    background-color: rgb(255, 0, 149);
+    box-shadow: 1px 1px 1px 1px  rgb(187, 187, 187);
+    border: 1px solid rgba(219, 219, 219, 1);
+    background-color: rgba(255, 255, 255, 1);
     width: 610px;
     height: 800px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 12px;
     justify-content: center;
 }
 .post{
@@ -122,11 +125,18 @@ main{
     margin-top: 24px;
     margin-bottom: 60px;
 }
-
-/* responsivo */
-@midia only screen and (max-width: 768px){
-
+a:hover{
+    filter:brightness(1.2) ;
 }
-@midia only screen and (max-width: 614px){
-    
+.userjpg{
+    margin: 30px 10px;
+    width: 66px;
+    height: 65px;
+    border-radius: 28px;
+}
+@midia only screen and (max-width: 935px) {
+    .divao2{
+        display:none;
+        visibility: none;
+    }
 }
