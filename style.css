@@ -17,6 +17,7 @@ footer{
     bottom: 0px;
     background: rgba(255, 255, 255, 1);
 }
+
 .topo-mobile{
     padding-top: 16px;
     margin:  auto;
@@ -103,11 +104,11 @@ main{
     margin-left: 620px;
     margin-bottom: 350px;
 }
-.story{
+.storys{
     box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
     border: 1px solid rgba(219, 219, 219, 1);
     background-color: rgba(255, 255, 255, 1);
-    width: 610px;
+    width: 614px;
     height: 100px;
     margin-top: 88px;
     margin-bottom: 20px;
@@ -117,7 +118,7 @@ main{
     box-shadow: 1px 1px 1px 1px  rgb(187, 187, 187);
     border: 1px solid rgba(219, 219, 219, 1);
     background-color: rgba(255, 255, 255, 1);
-    width: 610px;
+    width: 614px;
     height: 12200px;
     display: flex;
     align-items: flex-start;
