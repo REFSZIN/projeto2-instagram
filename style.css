@@ -9,6 +9,7 @@ header{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #b3b1b1 ;
+    z-index: 1;
 }
 footer{
     position: fixed;
@@ -16,6 +17,7 @@ footer{
     display: none;
     bottom: 0px;
     background: rgba(255, 255, 255, 1);
+    z-index: 2;
 }
 
 .topo-mobile{
@@ -41,7 +43,7 @@ footer{
     height: auto;
     padding-top: 14px;
 }
-input[type=text]{
+.input-header{
     height: 25px;
     width: auto;
     background-color: rgb(238, 238, 238);
@@ -49,6 +51,10 @@ input[type=text]{
     text-align: center;
     box-shadow: 0 0  2px 1px;
     border-radius: 8px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
 }
 a{
     text-decoration: none;
@@ -76,6 +82,7 @@ a{
 body{
     justify-content: center;
     align-items: center;
+    background-color: #E5E5E5;
 }
 main{
     width: 935px;
@@ -83,6 +90,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #E5E5E5;
 }
 .timeline{
     width: 500px;
@@ -91,44 +99,32 @@ main{
     margin-right: 440px;
 }
 .sidebar{
-    border: 1px solid rgba(219, 219, 219, 1);
-    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
     position: fixed;
     top: 72px;
     left: 4% 7%;
     display: flex;
-    background-color: rgba(255, 255, 255, 1);
-    width: 300px;
+    width: 280px;
     height: 500px;
     margin-top: 15px;
     margin-left: 620px;
     margin-bottom: 350px;
 }
-.storys{
-    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
-    border: 1px solid rgba(219, 219, 219, 1);
-    background-color: rgba(255, 255, 255, 1);
-    width: 614px;
-    height: 100px;
-    margin-top: 88px;
-    margin-bottom: 20px;
-    margin-left: 12px;
-}
+
 .posts{
-    box-shadow: 1px 1px 1px 1px  rgb(187, 187, 187);
-    border: 1px solid rgba(219, 219, 219, 1);
-    background-color: rgba(255, 255, 255, 1);
     width: 614px;
-    height: 12200px;
     display: flex;
     align-items: flex-start;
     margin-left: 12px;
     justify-content: center;
+    flex-direction: column;
 }
 .post{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
+    border: 1px solid rgba(219, 219, 219, 1);
     width: 614px;
-    margin-top: 24px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 a:hover{
     filter:brightness(1.2) ;
@@ -138,4 +134,332 @@ a:hover{
     width: 66px;
     height: 65px;
     border-radius: 28px;
+}
+.userjpg:hover{
+    cursor: pointer;
+}
+.borda{
+    margin: 10px 10px;
+    width: 55px;
+    height: 50px;
+    border-radius: 28px;
+}
+.borda:hover{
+    cursor: pointer;
+}
+.user-name-story{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: 400 bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+.user-name-story:hover{
+    cursor: pointer;
+}
+.storys{
+    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
+    border: 1px solid rgba(219, 219, 219, 1);
+    background-color: rgba(255, 255, 255, 1);
+    width: 614px;
+    height: 100px;
+    margin-top: 88px;
+    margin-left: 12px;
+    overflow: hidden;
+    
+    position: relative;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+
+}
+.ostory{
+    
+    padding-left: 5px;
+    width: 40px;
+    height: 90px;
+}
+.titulo-post{
+    margin-top: 20px;
+    display: flex;
+}
+.icon-user-post{
+    width: 40px;
+    height: 40px;
+    border-radius: 28px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+}
+.icon-user-post:hover{
+    cursor: pointer;
+}
+.user-name-post{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.user-name-post:hover{
+    cursor: pointer;
+}
+.options-post{
+    padding-left: 450px;
+    padding-bottom: 20px;
+}
+.icons-post{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 23px;
+    margin-top: 5px;
+    margin-left: 8px;
+}  
+ion-icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+ion-icon:hover{
+    cursor: pointer;
+}
+aside{
+    flex-direction: column;
+}
+.user{
+    display: flex;
+    width: 100px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+.recomendados{
+    flex-direction: column;
+    padding: 10px;
+    margin-left:5px ;
+    margin-top: 10px;
+}
+.icons-direita{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.curtidas-post{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+}
+.icon-user-like{
+    width: 20px;
+    height: 20px;
+    border-radius: 28px;
+    margin: 10px;
+}
+.icon-user-like:hover{
+    cursor: pointer;
+}
+.comentario1{
+    display: flex;
+    flex-direction: line;
+    width: 614px;
+    height: 60px;
+    border-bottom: 1px solid ;
+} 
+.userimg-comentario{
+    margin: 10px;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+}
+button{
+    background-color: #fff;
+    border: none;
+    color: blue;
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    font-style: bold;
+    line-height: 14px;
+    text-align: right;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+.comentario1:hover{
+    cursor: pointer;
+}
+.input-comentarios{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    height: 32px;
+}
+.input-comentarioss{
+    border-style: none;
+    width: 380px;
+    height: 30px;
+}
+.emotions{
+    height: 30px;
+    padding-bottom: 10px;
+}
+.icons-esqueda{
+    justify-content: space-around;
+    margin:10px;
+}
+.comentarios-post{
+    width: 100px;
+    height: 60px;
+    display: inline;
+}
+.coments{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px;
+}
+.img-story{
+    width:610px;
+    height:450px;
+}
+.user-name{
+    padding-left: 10px;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.img-recomendados:hover{
+    cursor: pointer;
+}
+.titulo-recomendados{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.img-recomendados{
+    width: 35px;
+    height: 35px;
+    border-radius: 28px;
+    margin-left: 5px}
+.user-apelido{
+    margin-top: 5px;
+}
+.user-recomendados{  
+    width: 200px;
+    height: 150px;
+}
+.recomendados1{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+}
+.desc{
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 200px;
+    height: 90px;
+    display: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+    color: rgb(151, 151, 151);
+
+
+}
+.user-name-reco{
+    color: rgba(38, 38, 38, 1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 4px;
+}
+.seguir{
+    color: rgba(19, 158, 242, 1);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-top: 10px;
+    padding-left: 60px;
+}
+.names{
+    margin-left: 5px;
+}
+.desc1{
+    margin: 5px;
+    width: 190px;
+}
+.desc2{
+    margin: 5px;
+    width: 290px;
+}
+.icon-story{
+    color: black;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 1px;
+    bottom: 35px;
+    background-color: white;
+    border-radius: 34px;
+}
+.text-users-liked{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+.text-users-liked:hover{
+    cursor: pointer;
+}
+.name-{
+    font-weight: 700;   
+}
+.user-apelido{
+    font-weight: 300;
+}
+.vertudo{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+.vertudo:hover{
+    cursor: pointer;
+}
+.seguir:hover{
+    cursor: pointer;
+}
+.user-name-reco:hover{
+    cursor: pointer;
+}
+.name-{
+    cursor: pointer;
+}
+.user-apelido{
+    cursor: pointer;
 }
